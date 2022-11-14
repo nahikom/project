@@ -24,28 +24,64 @@ body, html{
 .overlay a {
     color: white;
     text-decoration: none;
+    font-family: 'Montserrat';
+}
+.topmenu{
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
 }
 .topmenu > li {
     display: inline-block;
     margin-right: 20px;
     position: relative;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
 }
 .topmenu > li:last-child {
     margin-right: 0;
 }
+.topmenu li:hover a {
+    border-bottom: 3px solid transparent;
+    border-color: #f04d35;
+}
 .rel {
     position: relative;
+}
+.pointer {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    color: white;
 }
 .submenu {
     position: absolute;
     opacity: 0;
+    padding: 0;
+    margin-right: auto;
     visibility: hidden;
-    padding-left: 0;
-    background: #b83e09;
+    list-style: none;
+    background: #f04d35;
 }
 li:hover .submenu {
     visibility: visible;
     opacity: 1;
+}
+.submenu li {
+    padding: 10px;
+}
+.submenu li:hover {
+    background: #d13018;
+}
+.submenu li:hover a {
+    border: none;
 }
 .video-wrapp {
     position:absolute;
@@ -67,3 +103,14 @@ li:hover .submenu {
     transform: translateX(-50%);
     min-height: 768px;
 }
+
+
+
+
+
+@font-face {
+    font-family: "Montserrat"; 
+    src: url("files/Montserrat-Medium.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
